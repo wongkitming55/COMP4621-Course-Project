@@ -306,5 +306,4 @@ class Server:
 if __name__ == "__main__":
     # creating the instance of the server class
     server = Server(
-        config={'HOST_NAME': '127.0.0.1', 'BIND_PORT': 12346, 'MAX_REQUEST_LEN': 1000, 'CONNECTION_TIMEOUT': 100,
-                "BLOCKED_URL": "http://sing.cse.ust.hk/" "hm.baidu.com" "http://hqs10.cnzz.com/", 'BUFFER_SIZE': 4096})
+        config={'HOST_NAME': '127.0.0.1', 'BIND_PORT': 12346, 'MAX_REQUEST_LEN': 1000, "BLOCKED_URL": "http://sing.cse.ust.hk/" "hm.baidu.com" "http://hqs10.cnzz.com/", 'BUFFER_SIZE': 4096})
