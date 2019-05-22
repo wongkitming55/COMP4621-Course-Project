@@ -1,0 +1,501 @@
+HTTP/1.1 200 OK
+Date: Wed, 22 May 2019 08:41:30 GMT
+Server: Apache
+X-Powered-By: PHP/5.3.3
+Vary: Accept-Encoding,User-Agent
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Transfer-Encoding: chunked
+
+1fa0
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />                
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,  user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta property="og:type" content="website" />
+		<meta property="og:url" content="http://143.89.8.89" />
+        <meta property="og:title" content="HKUST Business School" />
+        <meta property="og:description" content="HKUST Business School" />
+
+        <meta name="keywords" content="HKUST Business School" />
+        <meta name="description" content="HKUST Business School" />
+
+
+        <meta itemprop="image" content="http://143.89.8.89/files/og_tag_withbuildingname.jpg">
+
+		<title>HKUST Business School</title>
+
+
+        <link href="/favicon.ico" type="image/x-icon" rel="icon" /><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+
+    	
+	<link rel="stylesheet" type="text/css" href="/js/selectbox/css/jquery.selectbox.css" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css?v=20181231" />
+	<link rel="stylesheet" type="text/css" href="/css/colorbox.css" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.ui.css" />
+	<link rel="stylesheet" type="text/css" href="/css/jQueryTabAnimation.css" />
+
+    	
+	<script type="text/javascript" src="/js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-migrate-1.4.1.js"></script>
+	<script type="text/javascript" src="/js/jquery_custom_extend.js"></script>
+	<script type="text/javascript" src="/js/jquery.slimscroll.js"></script>
+	<script type="text/javascript" src="/js/accordian-selector-tab.js"></script>
+	<script type="text/javascript" src="/js/init.min.js?v=20181231"></script>
+	<script type="text/javascript" src="/js/fitHeight.js"></script>
+	<script type="text/javascript" src="/js/selectbox/js/jquery.selectbox-0.2.js"></script>
+	<script type="text/javascript" src="/js/scroll-pagination.js"></script>
+	<script type="text/javascript" src="/js/jquery.colorbox.js"></script>
+	<script type="text/javascript" src="/js/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui-1.9.2.custom.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.datavalidation.js"></script>
+	<script type="text/javascript" src="/js/jquery.datavalidation-custom-rule.js"></script>
+	<script type="text/javascript" src="/js/jQueryTab.js"></script>
+	<script type="text/javascript" src="/js/jquery.cycle2.js"></script>
+	<script type="text/javascript" src="/js/jquery.cycle2.swipe.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.dotdotdot.min.js"></script>
+		
+		
+        <script type="text/javascript">
+            var site_path = "http://143.89.8.89";
+			var project_folder = '/';
+			var page_controller = 'pages'
+			var page_action = 'display'
+            var page_pass = '';
+    		var page_model = 'Page'
+			var page_lang = 'en-US';
+			var page_compare = 'en_us';
+			var page_folder = 'en-us';
+		</script>
+
+		<style >
+			.pngfix {behavior: url(/css/iepngfix.htc);}
+        </style>
+
+
+    </head>
+
+    <body class="en_us ">
+    <div class="welcome-page"></div>
+    	<div class="header-drawer">
+    <div class="drawer-wrapper">
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="more-about">More about HKUST</div>
+                <div class="row">
+                    <a class="page" href="https://www.ust.hk/news" target="_blank">University News</a>
+                    <a class="page" href="https://www.ust.hk/academics/list" target="_blank">Academic Departments A-Z</a>
+                    <a class="page" href="https://www.ust.hk/lifehkust" target="_blank">Life@HKUST</a>
+                    <a class="page" href="http://library.ust.hk/" target="_blank">Library</a>
+                </div>
+                <div class="row">
+                    <a class="page" href="https://www.ust.hk/map-directions" target="_blank">Map &amp; Directions</a>
+                    <a class="page" href="https://www.ab.ust.hk/hro/PubDoc/careers/main.html?btn1=btn_nav_06&main=welcome.html" target="_blank">Jobs@HKUST</a>
+                    <a class="page" href="https://facultyprofiles.ust.hk/" target="_blank">Faculty Profiles</a>
+                    <a class="page" href="https://www.ust.hk/about-hkust" target="_blank">About HKUST</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="top-bar">
+    <div class="container">
+        <div class="quick-link">
+            <ul class="nav">
+                <li>
+                    <a href="/en-us/prospective-students" title="Prospective Students">Prospective Students</a>
+                </li>
+                <li>
+                    <a href="/en-us/current-students" title="Current Students">Current Students</a>
+                </li>
+                <li>
+                    <a href="/en-us/alumni" title="Alumni">Alumni</a>
+                </li>
+                <li>
+                    <a href="/en-us/corporate-visitors" title="Corporate Visitors">Corporate Visitors</a>
+                </li>
+                <li>
+                    <a href="/en-us/media-resources/overview" title="Media">Media</a>
+                </li>
+                <li>
+                    <a href="/en-us/faculty-and-staff/overview" title="Faculty &amp; Staff">Faculty &amp; Staff</a>
+                </li>
+                <li>
+                    <a href="/en-us/enquiry/contact-us" title="Enquiry">Enquiry</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tools">
+            <div class="drawer-toggle">
+                <img src="/img/fa-chevron-up.png">
+            </div>
+            <div class="external-link">
+                <a class="link dark" href="http://www.ust.hk/" title="HKUST" target="_blank">HKUST<i class="ico-external-url"></i></a>
+                <a class="link dark" href="https://www.linkedin.com/company/hkust-business-school?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A3752902%2Cidx%3A5-2-13%2CtarId%3A1452150388330%2Ctas%3AHKUST" title="Follow us in LinkedIn" target="_blank">Follow <span>us</span><i class="ico-linkedIn"></i></a>
+            </div>
+            <a class="link gold" href="/en-us/faculty-and-staff" title="Faculty &amp; Staff Login"><span>Faculty &amp; Staff</span> Login<i class="ico-people"></i></a>
+
+            <div class="language-tools">
+                <div class="dropdown blue">
+                    <div class="dropdown-selector">
+                        						語言					</div>
+                    <div class="ico-language">&nbsp;</div>
+                    <div class="dropdown-options">
+                        <ul>
+							<li class="active"><a href="/en-us/css/ajax-loader.gif">English</a></li>
+                            <li ><a href="/zh-hk/css/ajax-loader.gif">繁體中文</a></li>
+                            <li ><a href="/zh-cn/css/ajax-loader.gif">简体中文</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+             <div class="search-tools">
+               <a class="icon"><i class="ico-search search-open"></i></a>
+            </div>
+            <div class="share-tools">
+                <div class="dropdown dark-gray">
+                    <div class="dropdown-selector icon"><i class="ico-share"></i><span>Share</span></div>
+                    <div class="dropdown-arrow">&nbsp;</div>
+                    <div class="dropdown-options">
+                        <ul>
+                                                      <li>
+                              <a href="#" class="icon" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?&amp;u=http://143.89.8.89','facebook','width=600,height=400'); return false;"><i class="ico-
+1fa0
+facebook"></i><span>Facebook</span></a>
+                            </li>
+                            <li>
+                              <a href="#" class="icon" target="_blank" onclick="window.open('http://service.weibo.com/share/share.php?url=http://143.89.8.89','weibo','width=600,height=400'); return false;"><i class="ico-weibo"></i><span>Weibo</span></a>
+                            </li>
+                            <li>
+                              <a href="#" class="icon" target="_blank" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http://143.89.8.89','LinkedIn','width=600,height=400'); return false;"><i class="ico-linkedIn"></i><span>LinkedIn</span></a>
+                            </li>
+                                                  </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="header" >
+    <div class="container">
+        <div>
+            <div class="left logo">
+                <a href="/en-us/" title=""><img src="/files/logo-blue.png"></a>
+            </div>
+            <div class="logo ust-logo right">
+                <a href="https://www.ust.hk" target="_blank">
+                                    <img src="/img/logo-hkust.png">
+                                  </a>
+                
+                <a class="left btn-icon ico-search_x24 search-open" href="">&nbsp;</a>
+                <a class="left btn-icon ico-menu nav-open" href="">
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                </a>
+            </div>
+        </div>
+        <div class="menu">
+    <ul class="accordion">
+								<li class="accordion-item">
+			<a href="/en-us/the-school/introduction" title="The School" >The School</a>
+			 <div class="submenu">
+                <div class="container clearfix">
+                    <div class="cols cols-1">
+						<ul><li><a href="/en-us/the-school/introduction" >Introduction<i class="icon ico-arrow-right"></i></a><ul><li><a href="/en-us/the-school/introduction/global-reach-and-gateway-to-china" >Global Reach and Gateway to China</a></li><li><a href="/en-us/the-school/introduction/gnam" >Global Network for Advanced Management (GNAM)</a></li><li><a href="/en-us/the-school/introduction/aapbs_2018" >AAPBS 2018 Academic Conference </a></li><li><a href="/en-us/the-school/introduction/beta-gamma-sigma-hkust-chapter" >Beta Gamma Sigma HKUST Chapter<i class="icon ico-arrow-right"></i></a><ul><li><a href="/en-us/the-school/introduction/beta-gamma-sigma-hkust-chapter/member-induction-ceremony" >Member Induction Ceremony</a></li></ul></li><li><a href="/en-us/the-school/introduction/facilities" >Facilities</a></li></ul></li><li><a href="/en-us/the-school/message-from-dean" >Message From Dean</a></li><li><a href="/en-us/the-school/mission" >School Mission</a></li><li><a href="/en-us/the-school/school-administration" >School Administration</a></li><li><a href="/en-us/media-resources/overview/fast-facts" >School Facts</a></li><li><a href="/en-us/the-school/school-advisory-council" >School Advisory Council</a></li><li><a href="/en-us/the-school/awards-and-achievements" >Awards & Achievements<i class="icon ico-arrow-right"></i></a><ul><li><a href="/en-us/the-school/awards-and-achievements/franklin-prize" >Franklin Prize For Teaching Excellence</a></li><li><a href="/en-us/the-school/awards-and-achievements/excellent-teaching" >Recognition Of Excellent Teaching</a></li></ul></li><li><a href="http://www.bm.ust.hk/sbmlearn/eng/home.php" target="_blank" >Center for Business Education<i class="icon ico-external-url"></i></a></li><li><a href="/en-us/the-school/subscription" >Subscription</a></li></ul>					</div>
+					<div class="cols cols-2">
+<div class="description">
+<h2>The School</h2>
+<h4>Established in 1991, the HKUST Business School is recognized as one of the youngest and most respected business schools in Asia.</h4>
+</div>
+</div>
+<div class="cols cols-3"><img   src='/files/home-banner01_withbuildingname_290x189.jpg' alt="" /></div>				</div>
+			</div>
+		</li>
+								<li class="accordion-item">
+			<a href="/en-us/departments/overview" title="Departments" >Departments</a>
+			 <div class="submenu">
+                <div class="container clearfix">
+                    <div class="cols cols-1">
+						<ul><li><a href="/en-us/departments/overview" >Overview</a></li><li><a href="http://www.bm.ust.hk/acct/" target="_blank" >Accounting<i class="icon ico-external-url"></i></a></li><li><a href="http://www.bm.ust.hk/econ/" target="_blank" >Economics<i class="icon ico-external-url"></i></a></li><li><a href="http://www.bm.ust.hk/fina/web/" target="_blank" >Finance<i class="icon ico-external-url"></i></a></li><li><a href="http://www.bm.ust.hk/isom/" target="_blank" >Information Systems, Business Statistics and Operations Management<i class="icon ico-external-url"></i></a></li><li><a href="http://www.bm.ust.hk/mgmt/" target="_blank" >Management<i class="icon ico-external-url"></i></a></li><li><a href="http://www.bm.ust.hk/mark/" target="_blank" >Marketing<i class="icon ico-external-url"></i></a></li></ul>					</div>
+					<div class="cols cols-2">
+<div class="description">
+<h2>Departments</h2>
+<h4>Our six departments strive to provide first-rate business education to our highly diverse and high-caliber students.</h4>
+</div>
+</div>
+<div class="cols cols-3"><img   src='/files/main-menu-department.jpg' alt="" /></div>				</div>
+			</div>
+		</li>
+								<li class="accordion-item">
+			<a href="/en-us/degree-programs/overview" title="Degree Programs" >Degree Programs</a>
+			 <div class="submenu">
+                <div class="container clearfix">
+                    <div class="cols cols-1">
+						<ul><li><a href="/en-us/degree-programs/overview" >Overview</a></li><li><a href="http://undergrad.bm.ust.hk/" target="_blank" >Undergraduate Programs<i class="icon ico-external-url"></i></a></li><li><a href="http://www.mba.ust.hk/" target="_blank" >MBA<i class="icon ico-external-url"></i></a></li><li><a  class="no-content">EMBA<i class="icon ico-arrow-right"></i></a><ul><li><a href="http://emba.ust.hk/" target="_blank" >Kellogg-HKUST EMBA<i class="icon ico-external-url"></i></a></li><li><a href="http://hkustemba.ust.hk/" target="_blank" >HKUST EMBA for Chinese Executives<i class="icon ico-external-url"></i></a></li><li><a href="/en-us/degree-programs/emba/hkust-skolkovo-emba-for-eurasia" >HKUST-SKOLKOVO EMBA for Eurasia</a></li></ul></li><li><a  class="no-content">Master of Science<i class="icon ico-arrow-right"></i></a><ul><li><a href="http://www.msglobalfinance.org/" target="_blank" >HKUST-NYU Stern MS in Global Finance<i class="icon ico-external-url"></i></a></li><li><a href="http://www.msac.ust.hk/" target="_blank" >MSc in Accounting<i class="icon ico-external-url"></i></a></li><li><a href="http://www.msba.ust.hk/" target="_blank" >MSc in Business Analytics<i class="icon ico-external-url"></i></a></li><li><a href="http://www.mscecon.ust.hk" target="_blank" >MSc in Economics<i class="icon ico-external-url"></i></a></li><li><a href="http://mfin.bm.ust.hk/" target="_blank" >MSc in Financial Analysis<i class="icon ico-external-url"></i></a></li><li><a href="http://www.mscfintech.ust.hk/" target="_blank" >MSc in Financial Technology<i class="icon ico-external-url"></i></a></li><li><a href="http://www.msgo.ust.hk/" >MSc in Global Operations<i class="icon ico-arrow-right"></i></a><ul><li><a href="http://www.msgo.ust.hk/about-us/about-double-degree-program" target="_blank" >HKUST-Yale Double Degree Option<i class="icon ico-external-url"></i></a></li></ul></li><li><a href="http://mscism.ust.hk/" target="_blank" >MSc in Information Systems Management<i class="icon ico-external-url"></i></a></li><li><a href="http://www.hkustmimt.ust.hk/" >MSc in International Management<i class="icon ico-arrow-right"></i></a><ul><li><a href="http://www.hkustmimt.ust.hk/about-us/about-double-degree-program" target="_blank" >HKUST-Yale Double Degree Option<i class
+1fa0
+="icon ico-external-url"></i></a></li><li><a href="http://www.hkustmimt.ust.hk/about-us/about-double-degree-program" target="_blank" >HEC-HKUST Double Degree Option<i class="icon ico-external-url"></i></a></li></ul></li><li><a href="http://www.mscim.ust.hk/" target="_blank" >MSc in Investment Management<i class="icon ico-external-url"></i></a></li></ul></li><li><a href="http://phd.bm.ust.hk/" target="_blank" >PhD<i class="icon ico-external-url"></i></a></li></ul>					</div>
+					<div class="cols cols-2">
+<div class="description">
+<h2>Degree Programs</h2>
+<h4>Our strengths lie in our full range of program offerings that cater for every conceivable interest of students.</h4>
+</div>
+</div>
+<div class="cols cols-3"><img   src='/files/main-menu-degree.jpg' alt="" /></div>				</div>
+			</div>
+		</li>
+								<li class="accordion-item">
+			<a href="/en-us/executive-education/overview" title="Executive Education" >Executive Education</a>
+			 <div class="submenu">
+                <div class="container clearfix">
+                    <div class="cols cols-1">
+						<ul><li><a href="/en-us/executive-education/overview" >Overview</a></li><li><a href="http://www.bm.ust.hk/execed/open-programs/overview" target="_blank" >Open Programs<i class="icon ico-external-url"></i></a></li><li><a href="http://www.bm.ust.hk/execed/company-programs/overview" target="_blank" >Company Programs<i class="icon ico-external-url"></i></a></li><li><a href="http://www.bm.ust.hk/execed/open-programs/overview/1" target="_blank" >Leading for Success Consortium Program<i class="icon ico-external-url"></i></a></li><li><a href="http://www.bm.ust.hk/execed/" target="_blank" >Programs for Overseas MBA and EMBA Groups<i class="icon ico-external-url"></i></a></li><li><a href="http://www.bm.ust.hk/emba/" target="_blank" >Kellogg-HKUST EMBA<i class="icon ico-external-url"></i></a></li><li><a href="http://hkustemba.ust.hk/en-us/pages/home" target="_blank" >HKUST EMBA for Chinese Executives<i class="icon ico-external-url"></i></a></li><li><a href="http://www.globalfinancemaster.com/" target="_blank" >HKUST-NYU Stern MS in Global Finance<i class="icon ico-external-url"></i></a></li></ul>					</div>
+					<div class="cols cols-2">
+<div class="description">
+<h2>Executive Education</h2>
+<h4>We also offer a wide variety of executive education programs, staying at the forefront of educational development.</h4>
+</div>
+</div>
+<div class="cols cols-3"><img   src='/files/main-menu-education.jpg' alt="" /></div>				</div>
+			</div>
+		</li>
+								<li class="accordion-item">
+			<a href="/en-us/research/overview" title="Research" >Research</a>
+			 <div class="submenu">
+                <div class="container clearfix">
+                    <div class="cols cols-1">
+						<ul><li><a href="/en-us/research/overview" >Overview</a></li><li><a href="/en-us/research/faculty-guide" >Faculty Guide</a></li><li><a href="/en-us/research/research-centers" >Research Centers</a></li><li><a href="/en-us/research/hkust-business-insight" >Business Insight@HKUST<i class="icon ico-arrow-right"></i></a><ul><li><a href="/en-us/research/hkust-business-insight/selected-journal-publications" >Selected Journal Publications</a></li><li><a href="/en-us/research/hkust-business-insight/speakers-forum" >Speakers Forum</a></li><li><a href="/en-us/research/hkust-business-insight/presentation-series/latest-events" >Presentation Series<i class="icon ico-arrow-right"></i></a><ul><li><a href="/en-us/research/hkust-business-insight/presentation-series/latest-events" >Latest Events</a></li><li><a href="/en-us/research/hkust-business-insight/presentation-series/past-events" >Past Events</a></li><li><a href="http://videochannel.ust.hk/Watch.aspx?Section=Channels&Channel=16" target="_blank" >Video Channel<i class="icon ico-external-url"></i></a></li></ul></li><li><a href="/en-us/research/hkust-business-insight/one-belt-one-road" >One Belt One Road Series</a></li></ul></li><li><a href="http://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalbrowse&journal_id=970673" target="_blank" >Research Paper Series<i class="icon ico-external-url"></i></a></li></ul>					</div>
+					<div class="cols cols-2">
+<div class="description">
+<h2>Research</h2>
+<h4>Renowned for rigorous research, our research centers are committed to knowledge creation and contribute to the economic and social advancement of the region.</h4>
+</div>
+</div>
+<div class="cols cols-3"><img   src='/files/main-menu-research_0.jpg' alt="" /></div>				</div>
+			</div>
+		</li>
+								<li class="accordion-item">
+			<a href="/en-us/media-resources/coverview" title="Community" >Community</a>
+			 <div class="submenu">
+                <div class="container clearfix">
+                    <div class="cols cols-1">
+						<ul><li><a href="/en-us/media-resources/coverview" >Overview</a></li><li><a href="/en-us/the-school/school-advisory-council" >School Advisory Council</a></li><li><a href="/en-us/alumni" >Alumni</a></li><li><a href="/en-us/research/hkust-business-insight" >Business Insight@HKUST</a></li><li><a href="/en-us/media-resources/overview" >Media Resources<i class="icon ico-arrow-right"></i></a><ul><li><a href="/en-us/media-resources/overview/news" >News</a></li><li><a href="/en-us/media-resources/overview/press-releases" >Press Releases</a></li><li><a href="/en-us/media-resources/overview/school-events" >School Events</a></li><li><a href="/en-us/media-resources/overview/event-calendars" >Event Calendars</a></li><li><a href="/en-us/media-resources/overview/feature-stories" >Feature Stories</a></li><li><a href="/en-us/media-resources/overview/publications" >Publications<i class="icon ico-arrow-right"></i></a><ul><li><a href="/en-us/media-resources/overview/publications/bizhkust" >Biz@HKUST</a></li><li><a href="/en-us/media-resources/overview/publications/e-news" >e-News </a></li><li><a href="/en-us/media-resources/overview/publications/reports" >Reports</a></li></ul></li><li><a href="/en-us/media-resources/overview/videos" >Videos</a></li><li><a href="/en-us/media-resources/overview/fast-facts" >School Facts</a></li></ul></li></ul>					</div>
+					<div class="cols cols-2">
+<div class="description">
+<h2>Community</h2>
+<h4>We emphasize and focus on establishing connections and interactions with the community in different ways.</h4>
+</div>
+</div>
+<div class="cols cols-3"><img   src='/files/main-menu-community.jpg' alt="" /></div>				</div>
+			</div>
+		</li>
+					</ul>
+	<ul class="external-link-menu">
+														<li class="light"><a href="/en-us/the-school/introduction/aapbs_2018" title="AAPBS 2018 Academic Conference ">AAPBS 2018 Academic Conference </a></li>
+																<li class="light"><a href="/en-us/research/hkust-business-insight/one-belt-one-road" title="One Belt One Road Series">One Belt One Road Series</a></li>
+																<li class="light"><a href="/en-us/prospective-students" title="Prospective Students">Prospective Students</a></li>
+																<li class="light"><a href="/en-us/current-students" title="Current Students">Current Students</a></li>
+																<li class="light"><a href="/en-us/alumni" title="Alumni">Alumni</a></li>
+																<li class="light"><a href="/en-us/corporate-visitors" title="Corporate Visitors">Corporate Visitors</a></li>
+																<li class="light"><a href="/en-us/media-resources/overview" title="Media">Media</a></li>
+																<li class="light"><a href="/en-us/faculty-and-staff" title="Faculty & Staff">Faculty & Staff</a></li>
+																<li class="light"><a href="/en-us/enquiry/contact-us" title="Contact Us">Contact Us</a></li>
+																<li class="light"><a href="/en-us/enquiry/location-or-campus-map" title="Location / Campus Map">Location / Campus Map</a></li>
+																<li class="light"><a href="{"en-us":"http://www.ust.hk/about-hkust/about-the-campus/map-directions-2015/", "zh-hk":"http://www.ust.hk/zh-hant/about-hkust/about-the-campus-2/map-directions-2015/", "zh-cn":"http://www.ust.hk/zh-hans/about-hkust/about-the-campus-2/map-directions-2015/"} " target="_blank" title="Tra
+1fa0
+nsportation">Transportation<i class="icon ico-external-url"></i></a></li>
+											<li class="light"><a href="#" title="#"></a></li>		        <li class="dark double-height"><a href="https://www.linkedin.com/company/hkust-business-school?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A3752902%2Cidx%3A5-2-13%2CtarId%3A1452150388330%2Ctas%3AHKUST" title="Follow Us" target="_blank">Follow Us<i class="icon ico-linkedIn"></i></a></li>
+        <li class="dark double-height"><a href="https://www.ust.hk" target="_blank" title="The Hong Kong University of Science and Technolog"><img src="/img/logo-hkust-white.png"></a></li>
+    </ul>
+</div>
+	    <div class="search-box-container">
+	   	 	 <div class="container">
+	   	 	 	<div class="search-box" >
+	   	 	 		<form action="/en-us/searches/listed" id="search-form" method="get" accept-charset="utf-8">	   	 	 		<input type="text" placeholder="Search" name="kw" value="" />
+	   	 	 		<i type="submit" class="right btn-icon ico-search_x24 search-submit" >&nbsp;</i>
+	   	 	 		<div class="right  search-close" >Close<i class="ico-close_x24"></i></div>
+	   	 	 		</form>	   	 	 	</div>
+			</div>
+	    </div>
+    </div>
+</div>
+<script>
+
+    $('.nav-open').toggle(function() {
+        $('.menu').slideDown(function(){
+        	$(this).css('overflow','');
+        });
+        return false;
+    }, function() {
+        $('.menu').slideUp(function(){
+            $(this).css('display', '');
+        });
+        return false;
+    });
+</script>
+
+    	<div class="main-body full">
+    		<div class="container">
+    			<div class="main-wrap">
+					<div class="error-box">
+
+	<img src="/img/exclamation-mark-icon.png" alt="Not Found" />	<div></div>
+	<div class="text">
+		<h1>PAGE NOT FOUND</h1>
+		<p>This page cannot be found</p>
+		<a href="/" class="btn-input gray-white"><i class="ico-read-more"></i><span>Back to home page</span></a>
+	</div>
+	<div></div>
+</div>				</div>
+    		</div>
+    	</div>
+
+    	<script type="text/javascript">
+/*
+  Date: 2015 Oct
+  Fix for placeholder ie9 or before
+  e.g. <input id="enews-input" type="text" placeholder="E-Newsletter Subscription">
+*/
+$(function(){
+    if($.browser.msie && $.browser.version <= 9){
+        $("[placeholder]").focus(function(){
+            if($(this).val()==$(this).attr("placeholder")) $(this).val("");
+        }).blur(function(){
+            if($(this).val()=="") $(this).val($(this).attr("placeholder"));
+        }).blur();
+
+        $("[placeholder]").parents("form").submit(function() {
+            $(this).find('[placeholder]').each(function() {
+                if ($(this).val() == $(this).attr("placeholder")) {
+                    $(this).val("");
+                }
+            })
+        });
+    }
+});
+</script>
+
+<div id="footer" class="footer clearfix">
+
+  <div class="bottom-bar-1">
+    <div class="horizontal-center">
+      <div class="footer-menu-block clearfix">		
+		 			
+        <div class="footer-menu clearfix">
+          <div class="footer-menu-wrapper">
+			            <ul class="footer-menulist 1">
+									<li><span class="footer-menulist-text"><a href="/en-us/the-school/introduction" title="The School">The School</a></span></li>
+									<li><span class="footer-menulist-text"><a href="/en-us/departments/overview" title="Departments">Departments</a></span></li>
+									<li><span class="footer-menulist-text"><a href="/en-us/degree-programs/overview" title="Degree Programs">Degree Programs</a></span></li>
+									<li><span class="footer-menulist-text"><a href="/en-us/executive-education/overview" title="Executive Education">Executive Education</a></span></li>
+				            </ul>
+			            <ul class="footer-menulist 2">
+									<li><span class="footer-menulist-text"><a href="/en-us/research/overview" title="Research">Research</a></span></li>
+									<li><span class="footer-menulist-text"><a href="/en-us/media-resources/coverview" title="Community">Community</a></span></li>
+									<li><span class="footer-menulist-text"><a href="/en-us/prospective-students" title="Prospective Students">Prospective Students</a></span></li>
+									<li><span class="footer-menulist-text"><a href="/en-us/current-students" title="Current Students">Current Students</a></span></li>
+				            </ul>
+			          </div>
+        </div>
+
+        <div class="vertical-line"><img src="/img/footer-vertical-line.png"></div>
+        <div class="horizontal-line"><img src="/img/footer-horizon-line2.png"></div>
+
+        <div class="footer-info">
+          <div class="footer-info-detail">
+            <div class="image-block"><img src="/files/footer-logo.png" /></div>
+            <div class="footer-address">
+              <p>The Hong Kong University of Science and Technology<br>
+              Clear Water Bay, Kowloon Hong Kong</p>
+            </div>
+            <div class="footer-phone"><i class="icon-footer-phone"></i>(852) 2358 7533</div>
+            <div class="footer-fax"><i class="icon-footer-fax"></i>(852) 2358 1467</div>
+          </div>
+
+          <div class="footer-info-image">
+            <div class="image-block"><img src="/files/footer-photo.png"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-bar-2">
+      <div class="content-locator">
+          <div class="site-col">
+              <div class="hkust-logo desktop">
+                  <a class="page" href="https://www.ust.hk/" target="_blank">
+                      <img src="/img/hkust_logo_small.svg">
+                  </a>
+              </div>
+              <div class="site-pages">
+                  <a class="page" href="/privacy-policy">Privacy Policy</a><a href="/en-us/sitemaps/index" class="page">Sitemap</a>                  <div class="copyright desktop">Copyright © The Hong Kong University of <span>Science and Technology.</span> <span>All rights reserved.</span></div>
+              </div>
+          </div>
+
+          <div class="social-share-col">
+              <div class="e-newsletter-block">
+                  <form id="enews-form" class="enews-form" action="/en-us/the-school/subscription" method="POST">
+                      <div class="imageInputWrapper">
+                          <input id="enews-input" type="text" name="sub_email" class="input-with-img no-shadow " placeholder="E-Newsletter Subscription">
+                              <input name="from_footer" type="hidden" value="1"/>
+                          <div class="button-img-block"><a href="#"><img src="/img/footer-enews-icon.png"></a></div>
+                      </div>
+                  </form>
+              </div>
+              <div class="text">Follow HKUST on</div>
+              <div class="icon-wrapper">
+                  <a class="page" href="https://www.facebook.com/HKUST.Business.School.Alumni/" target="_blank"><img src="/img/fb.png"> FaceBook </a><a class="page" href="https://www.instagram.com/hkustsbmalumni/" target="_blank"><img src="/img/ig.png"> ig </a><a class="page" href="https://www.linkedin.com/company/hkust-business-school/" target="_blank"><img src="/img/linkedin.png"> LinkedIn </a><a class="page" href="https://www.youtube.com/channel/UCQVWm3oqqa6cfQDC2JivNrQ" target="_blank"><img src="/img/youtube.png"> youtube </a>
+              </div>
+          </div>
+          <div class="hkust-logo mobile">
+              <img src="/img/hkust_logo_small.svg">
+          </div>
+          <div class="copyright mobile">Copyright © The Hong Kong University of <span>Science and Technology.</span> <span>All rights reserved.</span></div>
+      </div>
+  </div>
+
+</div>
+<script>
+$('.e-newsletter-block #enews-form .button-img-block').click(function(e){
+	e.preventDefault();
+	$('#enews-form').submit();
+});
+
+$('#enews-form').submit(function(){
+	var obj = $('#enews-input');
+	if($.trim(obj.val()) == ""){
+		obj.focus();
+		return false;
+	}
+});
+
+
+</script>		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arg
+1e0
+uments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','/js/analytics.js','ga');
+
+  ga('create', 'UA-39809485-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+		<div class="inline-video-wrap">
+		    <div class='inline-video-content' >
+		    	<video controls="controls" autoplay src="" onloadeddata="this.play();"></video>
+		    </div>
+		</div>
+    </body>
+</html>
+
+0
+

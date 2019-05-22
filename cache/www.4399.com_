@@ -1,0 +1,11 @@
+HTTP/1.1 304 Not Modified
+Date: Wed, 22 May 2019 08:40:43 GMT
+Content-Type: text/html
+Connection: keep-alive
+Expires: Wed, 22 May 2019 02:02:28 GMT
+Last-Modified: Wed, 22 May 2019 01:29:31 GMT
+ETag: W/"5ce4a5fb-2a6dd"
+Cache-Control: max-age=1800
+Age: 11284
+X-Via: 1.1 dianxin149:9 (Cdn Cache Server V2.0)
+

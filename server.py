@@ -4,8 +4,8 @@ import threading
 import time
 import os
 import ssl
-
-MAX_CACHE_BUFFER = 3
+import sys
+MAX_CACHE_BUFFER = 5
 CACHE_DIR = "./cache"
 
 
@@ -61,15 +61,15 @@ class Server:
         Here is doing Block function
         """
 
-        if headers["server_url"] in self.config["BLOCKED_URL"]:
+        if headers["server_url"] in self.config["BLOCKED_URL"] or headers["method"] == "CONNECT" or headers["server_port"] == 443:
             print ("Block status : ")
             conn.send("HTTP/2.0 404 Not Found\r\n".encode("utf-8"))
             conn.send("content-type: text/html; charset=UTF-8\r\n".encode("utf-8"))
             conn.send("referrer-policy: no-referrer\r\n".encode("utf-8"))
             conn.send("content-length: 1568\r\n".encode("utf-8"))
             conn.send("\r\n\r\n".encode("utf-8"))
-
-        elif headers["method"] == "GET" or headers["method"] == "CONNECT":
+        #or headers["method"] == "CONNECT":
+        elif headers["method"] == "GET" :
             #get the information of request from client and extract the request url port etc
             headers = self.get_cache_info(headers)
             # if the mutate time exist that means the are requested file in a cache.
@@ -176,7 +176,7 @@ class Server:
             lock.release()
         else:
             print("nothing")
-            #sys.exit()
+            sys.exit()
         print("return from leave access")
 
     # insert the header for checking the page is changed or not
@@ -226,7 +226,7 @@ class Server:
                     server_socket = context.wrap_socket(socket.socket(socket.AF_INET), server_hostname=headers["server_url"])
                     server_socket.connect((headers["server_url"], 443))
                     print("This is url checking", headers["url"])
-                    server_socket.send(("GET " + headers["url"] + " HTTP/1.1\r\n" + "Host: " + headers["server_url"] + "\r\n" + "Connection: close\r\n" + "\r\n").encode('utf-8'))
+                    server_socket.sendall(("GET " + headers["url"] + " HTTP/1.1\r\n" + "Host: " + headers["server_url"] + "\r\n" + "Connection: close\r\n" + "\r\n").encode('utf-8'))
                     reply = server_socket.recv(self.config['BUFFER_SIZE'])
                 else:
                     print("This is HTTP request", headers["server_url"], headers["server_port"])
@@ -306,5 +306,5 @@ class Server:
 if __name__ == "__main__":
     # creating the instance of the server class
     server = Server(
-        config={'HOST_NAME': '127.0.0.1', 'BIND_PORT': 12346, 'MAX_REQUEST_LEN': 1000, 'CONNECTION_TIMEOUT': 100000,
-                "BLOCKED_URL": 'http://sing.cse.ust.hk/', 'BUFFER_SIZE': 10000})
+        config={'HOST_NAME': '127.0.0.1', 'BIND_PORT': 12346, 'MAX_REQUEST_LEN': 1000, 'CONNECTION_TIMEOUT': 100,
+                "BLOCKED_URL": "http://sing.cse.ust.hk/" "hm.baidu.com" "http://hqs10.cnzz.com/", 'BUFFER_SIZE': 4096})
