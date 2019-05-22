@@ -3,7 +3,7 @@ import socket
 import threading
 import time
 import os
-import sys
+import ssl
 
 MAX_CACHE_BUFFER = 3
 CACHE_DIR = "./cache"
@@ -13,7 +13,6 @@ class Server:
     def __init__(self, config):
         # Shutdown on Ctrl+C
         self.config = config
-        signal.signal(signal.SIGINT, self.shutdown)
         print(
             '----------------------------------------------This is start------------------------------------------------')
         # A pair (host, port) is used for the AF_INET / SOCK_STREAM means that it is a TCP socket.
@@ -46,23 +45,11 @@ class Server:
             d = threading.Thread(target=self.proxy_thread, args=(clientSocket, client_address, client_data))
             # set the thread run in to daemon
             d.setDaemon(True)
+            #start to running the thread
             d.start()
-        self.shutdown(0, 0)
-
-    def shutdown(self, signum, frame):
-        """ Handle the exiting server. Clean all traces """
-        print("WARNING", -1, 'Shutting down gracefully...')
-        main_thread = threading.currentThread()  # Wait for all clients to exit
-        for t in threading.enumerate():
-            if t is main_thread:
-                continue
-                print(("FAIL", -1, 'joining ' + t.getName()))
-            t.join()
-            self.serverSocket.close()
-        sys.exit(0)
 
     def proxy_thread(self, conn, client_addr, client_data):
-        print("proxy_thread is running")
+        print("proxy_thread is running", client_data)
         headers = self.getHeaderDetails(client_data)
 
         if not headers:
@@ -71,9 +58,7 @@ class Server:
             return
 
         """
-            Here we can check whether request is from outside the campus area or not.
-            We have IP and port to which the request is being made.
-            We can send error message if required.
+        Here is doing Block function
         """
 
         if headers["server_url"] in self.config["BLOCKED_URL"]:
@@ -84,10 +69,14 @@ class Server:
             conn.send("content-length: 1568\r\n".encode("utf-8"))
             conn.send("\r\n\r\n".encode("utf-8"))
 
-        elif headers["method"] == "GET":
+        elif headers["method"] == "GET" or headers["method"] == "CONNECT":
+            #get the information of request from client and extract the request url port etc
             headers = self.get_cache_info(headers)
+            # if the mutate time exist that means the are requested file in a cache.
             if headers["mutate_time"]:
+                # append the If-Modified-Since: to the request header.
                 headers = self.check_modified(headers)
+            # send the request to the remote server that client requested.
             self.request(conn, client_addr, headers)
         conn.close()
         print (client_addr, "proxy_thread is ended")
@@ -105,13 +94,15 @@ class Server:
             url = methodAndUrl[1]
 
             # get starting url position and get the url
+            print("This is URL", url)
             url_pos = url.find("://")
             print("url_pos", url_pos)
             if url_pos != -1:
                 protocol = url[:url_pos]
+                print("This is protocol for -1", protocol)
                 url = url[(url_pos + 3):]
             else:
-                protocol = "http"
+                protocol = "https"
 
             # find starting position of the path url(remove server url)
             path_pos = url.find("/")
@@ -123,13 +114,14 @@ class Server:
             # if we do not find port, then set the default port to 80 and server url is before the path position
             port_pos = url.find(":")
             if port_pos == -1:
+                print("port check")
                 server_port = 80
                 server_url = url[:path_pos]
             else:
                 server_port = int(url[(port_pos + 1):path_pos])
                 server_url = url[:port_pos]
 
-
+            print("This is server port", server_port, server_url)
             # build up request for server
             methodAndUrl[1] = url[path_pos:]
             # without server url
@@ -165,6 +157,7 @@ class Server:
         print("get catch details is ended")
         return headers
 
+    # lock the file url
     def acquire_lock(self, filePath):
         print ("lock is call")
         if filePath in self.locks:
@@ -186,7 +179,7 @@ class Server:
             #sys.exit()
         print("return from leave access")
 
-    # insert the header
+    # insert the header for checking the page is changed or not
     def check_modified(self, headers):
         print("insert_if_modified is calling")
         headersList = headers["client_data"].splitlines()
@@ -218,13 +211,32 @@ class Server:
                 self.release_lock(headers["url"])
                 return
             else:
+                # This is change for the ssl https
+                print("header protocol check", headers["protocol"])
+                # the is handle https request
+                if headers["protocol"] == "https":
+                    context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+                    #Whether to try to verify other peers’ certificates and how to behave
+                    # if verification fails. This attribute must be one of CERT_NONE,
+                    # CERT_OPTIONAL or CERT_REQUIRED.
+                    # CERT_NONE:  With client-side sockets, just about any cert is accepted.
+                    # Validation errors, such as untrusted or expired cert, are ignored and do not abort the TLS/SSL handshake.
+                    context.verify_mode = ssl.CERT_NONE
+                    context.check_hostname = False
+                    server_socket = context.wrap_socket(socket.socket(socket.AF_INET), server_hostname=headers["server_url"])
+                    server_socket.connect((headers["server_url"], 443))
+                    print("This is url checking", headers["url"])
+                    server_socket.send(("GET " + headers["url"] + " HTTP/1.1\r\n" + "Host: " + headers["server_url"] + "\r\n" + "Connection: close\r\n" + "\r\n").encode('utf-8'))
+                    reply = server_socket.recv(self.config['BUFFER_SIZE'])
+                else:
+                    print("This is HTTP request", headers["server_url"], headers["server_port"])
+                    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                    server_socket.connect((headers["server_url"], headers["server_port"]))
+                    print("Sending the file to server to check the file is modified or not... ", headers["client_data"])
+                    server_socket.send(headers["client_data"].encode('utf-8'))
+                    reply = server_socket.recv(self.config['BUFFER_SIZE'])
+                    print("This is HTTP request", reply)
 
-                server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                server_socket.connect((headers["server_url"], headers["server_port"]))
-                print("Sending the file to server to check the file is modified or not... ", headers["client_data"])
-
-                server_socket.send(headers["client_data"].encode('utf-8'))
-                reply = server_socket.recv(self.config['BUFFER_SIZE'])
                 print("Reply from server....................", reply, headers["cache_path"] )
                 if mutate_time and "304 Not Modified" in reply.decode("utf-8"):
                     print ("returning cached file" + cache_path + "to " + str(client_addr))
@@ -241,14 +253,13 @@ class Server:
                     self.get_space_for_cache(headers["url"])
                     self.acquire_lock(headers["url"])
                     f = open(cache_path, "wb")
-                    # print len(reply), reply
                     while len(reply):
                         print(
                             "---------------------------------------------writing the file to the cache---------------------------")
                         client_socket.send(reply)
                         f.write(reply)
                         reply = server_socket.recv(self.config['BUFFER_SIZE'])
-                        # print len(reply), reply
+                        print ("This is testing on the reply", reply)
                     f.close()
                     self.release_lock(headers["url"])
                     client_socket.send("\r\n\r\n".encode('utf-8'))
@@ -280,7 +291,6 @@ class Server:
         now = time.time()
         print("Before remove", type(cache_files), cache_files)
         for file in cache_files:
-            #mutate_time = time.strptime(time.ctime(os.path.getmtime(cache_path + file) - 28800), "%a %b %d %H:%M:%S %Y")
             if now - os.path.getmtime(cache_path + file) > lar_time_diff:
                 file_to_del = file
                 lar_time_diff = now - os.path.getmtime(cache_path + file)
@@ -296,5 +306,5 @@ class Server:
 if __name__ == "__main__":
     # creating the instance of the server class
     server = Server(
-        config={'HOST_NAME': '127.0.0.1', 'BIND_PORT': 65535, 'MAX_REQUEST_LEN': 1000, 'CONNECTION_TIMEOUT': 1000,
-                "BLOCKED_URL": 'http://sing.cse.ust.hk/', 'BUFFER_SIZE': 4096})
+        config={'HOST_NAME': '127.0.0.1', 'BIND_PORT': 12346, 'MAX_REQUEST_LEN': 1000, 'CONNECTION_TIMEOUT': 100000,
+                "BLOCKED_URL": 'http://sing.cse.ust.hk/', 'BUFFER_SIZE': 10000})
